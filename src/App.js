@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Font from './components/extras/Font';
+import Navbar from './components/navbar/Navbar';
+import Header from './components/header/Header';
 
-function App() {
+function App(props) {
+  const subject = props.subject;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Header />
     </div>
   );
 }
