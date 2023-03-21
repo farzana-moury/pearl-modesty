@@ -1,11 +1,10 @@
 import React from "react";
 import './navbar.css';
-import Font from "../extras/Font";
 
 export default function Navbar() {
     return (
-        <nav className="navbar">
-            <div className="navbar-menu">
+        <nav className='navbar'>
+            <div className='navbar-menu'>
                 <div id='logo'>
                     <li>
                         <a href=''>PEARL MODESTY</a>

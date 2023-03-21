@@ -3,6 +3,7 @@ body {
   font-family: 'EB Garamond', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #F3E7E7;
 }
 
 code {
