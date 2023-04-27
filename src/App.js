@@ -6,6 +6,7 @@ import Shop from './components/shop/Shop';
 import AboutUs from './components/about us/AboutUs';
 import { Router } from '@reach/router';
 import { render } from '@testing-library/react';
+import React from 'react';
 
 function App(props) {
   

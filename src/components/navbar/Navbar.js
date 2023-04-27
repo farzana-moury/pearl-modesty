@@ -1,9 +1,5 @@
 import React from "react";
 import './navbar.css';
-import Home from '../home/Home';
-import New from '../new/New';
-import Shop from '../shop/Shop';
-import AboutUs from '../about us/AboutUs';
 import { Router, Link } from '@reach/router';
 
 export default function Navbar() {

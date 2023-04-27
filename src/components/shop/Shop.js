@@ -1,5 +1,6 @@
 import Navbar from "../navbar/Navbar";
 import './shop.css';
+import React from "react";
 
 export default function Shop(){
     return(
