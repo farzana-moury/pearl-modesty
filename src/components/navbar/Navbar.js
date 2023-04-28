@@ -1,6 +1,6 @@
 import React from "react";
 import './navbar.css';
-import { Router, Link } from '@reach/router';
+import { Link } from '@reach/router';
 
 export default function Navbar() {
     return (
@@ -9,7 +9,7 @@ export default function Navbar() {
                 <div className='navbar-menu'>
                     <div id='logo'>
                         <li>
-                            <a href=''>PEARL MODESTY</a>
+                            <Link to='/'>PEARL MODESTY</Link>
                         </li>
                     </div>
                     <div id='menu'>
@@ -28,10 +28,10 @@ export default function Navbar() {
                     </div>
                     <div id='icons'>
                         <li>
-                            <a href=''>🔍</a>
+                            <Link to=''><span role="img" aria-label="magnifying glass icon as search button">🔍</span></Link>
                         </li>
                         <li>
-                            <a href=''>🛒</a>
+                            <Link to=''><span role="img" aria-label="shopping cart icon as cart button">🛒</span></Link>
                         </li>
                     </div>
                 </div>
