@@ -12,9 +12,11 @@ export default function Shop(props){
     />);
 
     return(
-        <div className="shop">
-            <h1>Shop</h1>
+        <div className='shop'>
+            <h1><strong>SHOP</strong></h1>
+            <div className='collection-div'>
             {collectionsList}
+            </div>
         </div>
     );
 }

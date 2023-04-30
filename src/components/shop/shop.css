@@ -1,0 +1,16 @@
+.shop {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.shop h1 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 20px;
+}
+
+.collection-div {
+    display: inline-block;
+    width: 90%;
+}
