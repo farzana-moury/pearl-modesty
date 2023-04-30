@@ -18,8 +18,8 @@ import accessories from "./images/accessories.png";
 const DATA = [
   { id: `collections-${nanoid()}`, name: "Abayas", image: abayas},
   { id: `collections-${nanoid()}`, name: "Hijabs", image: hijabs },
-  { id: `collections-${nanoid()}`, name: "Dresses", image: dresses },
   { id: `collections-${nanoid()}`, name: "Niqabs", image: niqabs },
+  { id: `collections-${nanoid()}`, name: "Dresses", image: dresses },
   { id: `collections-${nanoid()}`, name: "Loose Wear", image: looseWear },
   { id: `collections-${nanoid()}`, name: "Accessories", image: accessories }
 ];

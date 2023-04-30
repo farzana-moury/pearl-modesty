@@ -4,15 +4,22 @@
     background-image: url(../../images/oyster.jpg);
     background-position: 0;
     background-size: cover;
-    box-shadow: #cea0a046 0 0 0 1000000px inset;
+
+    box-shadow: #75565646 0 0 0 1000000px inset;
+    
+    /* light pallette */
+    /* box-shadow: #75565646 0 0 0 1000000px inset; */
+    
+    /* darker pallette */
+    /* box-shadow: #4928286e 0 0 0 1000000px inset; */ 
 }
 
-h1, h2 {
+.header h1, .header h2 {
     margin: 0 auto;
     font-weight: 500;
 }
 
-h2 {
+.header h2 {
     margin-top: 5px;
 }
 
