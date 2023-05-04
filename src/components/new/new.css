@@ -14,3 +14,85 @@
     display: inline-block;
     padding: 15px;
 }
+
+.view-item {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 7rem 3rem;
+}
+
+.size-selection-list {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+}
+
+.block-button label{
+    cursor: pointer;
+    border: 0.5px solid black;
+    padding: 11px 18px 13px;
+    margin-right: 20px;
+    user-select: none;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.hidden {
+    display: none;
+}
+
+.view-item div p.label{
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+div#image {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+div#details {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+input[type="radio"]:checked + .size-button {
+    background: black;
+    color: white;
+}
+
+.view-item p {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.view-item button {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    background-color: #A07575;
+}
+
+.view-item p#description {
+    width: 500px;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.view-item p#heading {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: 'EB Garamond';
+}
+
+.view-item p#price {
+    font-size: 20px;
+}
+
+.view-item img {
+    width: 500px;
+}
