@@ -1,9 +1,13 @@
 .ad {
     height: 55rem;
     background-image: url(../../images/ramadan.png);
-    background-position: 0;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     box-shadow: #00000038 0 0 0 1000000px inset;
+    animation: switchAd 10s infinite ease-in-out;
+    background-position-x: left;
+    justify-content: space-between;
 }
 
 .ad h1{
@@ -41,4 +45,16 @@
     background-color: white;
     border: none;
     padding: 10px 25px;
+}
+
+@keyframes switchAd {
+    30% {
+        background-image: url(../../images/ramadan.png);
+    }
+    60% {
+        background-image: url(../../images/pearl-collection.jpg);
+    }
+    90% {
+        background-image: url(../../images/muslim-women.jpg);
+    }
 }
