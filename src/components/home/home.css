@@ -1,16 +1,57 @@
 .ad {
+    position: relative;
     height: 55rem;
-    background-image: url(../../images/ramadan.png);
+    /* background-image: url(../../images/ramadan.png); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: #00000038 0 0 0 1000000px inset;
-    animation: switchAd 10s infinite ease-in-out;
     background-position-x: left;
     justify-content: space-between;
 }
 
-.ad h1{
+.ad .slide {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.ad .slide.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+}
+
+.ad .slide img {
+    z-index: 1;
+    width: 100%;
+}
+
+.ad .navigation {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ad .navigation .btn {
+    background: rgba(255, 255, 255, 0.5);
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ad .navigation .btn.active{
+    background: #2696E9;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.ad h1 {
     color: white;
     text-align: center;
     width: fit-content;
@@ -31,9 +72,9 @@
     color: white;
 }
 
-#textbox {
-    position: relative;
-    top: 12rem;
+.textbox {
+    position: absolute;
+    top: 8rem;
     padding: 10rem 4rem;
     border: 2px solid white;
     text-align: center;
@@ -45,16 +86,4 @@
     background-color: white;
     border: none;
     padding: 10px 25px;
-}
-
-@keyframes switchAd {
-    30% {
-        background-image: url(../../images/ramadan.png);
-    }
-    60% {
-        background-image: url(../../images/pearl-collection.jpg);
-    }
-    90% {
-        background-image: url(../../images/muslim-women.jpg);
-    }
 }
