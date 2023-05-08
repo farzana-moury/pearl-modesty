@@ -1,54 +1,29 @@
 .ad {
     position: relative;
     height: 55rem;
-    /* background-image: url(../../images/ramadan.png); */
+    background-image: url(../../images/ramadan.png); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: #00000038 0 0 0 1000000px inset;
-    background-position-x: left;
-    justify-content: space-between;
 }
 
-.ad .slide {
+
+.sliderimg {
     z-index: 1;
-    position: absolute;
+    position: relative;
     width: 100%;
-    clip-path: circle(0% at 0 50%);
+    object-fit: cover;
+    height: 55rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.ad .slide.active {
-    clip-path: circle(150% at 0 50%);
-    transition: 2s;
-    transition-property: clip-path;
-}
-
-.ad .slide img {
+.sliderimg img {
     z-index: 1;
     width: 100%;
-}
-
-.ad .navigation {
-    z-index: 2;
-    position: absolute;
-    display: flex;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.ad .navigation .btn {
-    background: rgba(255, 255, 255, 0.5);
-    width: 12px;
-    height: 12px;
-    margin: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.ad .navigation .btn.active{
-    background: #2696E9;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    box-shadow: #00000038 0 0 0 1000000px inset;
 }
 
 .ad h1 {
@@ -73,8 +48,10 @@
 }
 
 .textbox {
+    width: 85%;
     position: absolute;
     top: 8rem;
+    left: 1rem;
     padding: 10rem 4rem;
     border: 2px solid white;
     text-align: center;
