@@ -1,6 +1,6 @@
 var slides = document.querySelectorAll('.slide');
 var buttons = document.querySelectorAll('.btn');
-let currentSlide = 1;
+let currentSlide = 0;
 
 //JavaScript for ad slider manual navigation
 var manualNav = function (manual) {
@@ -26,7 +26,7 @@ buttons.forEach((btn, i) => {
 //JavaScript for ad slider autoplay navigation
 var repeat = function () {
     let active = document.getElementsByClassName('active');
-    let i = 1;
+    let i = 0;
 
     var repeater = () => {
         setTimeout(function () {
@@ -38,7 +38,7 @@ var repeat = function () {
             buttons[i].classList.add('active');
             i++;
 
-            if (slides.length == i) {
+            if (slides.length === i) {
                 i = 0;
             }
             if (i >= slides.length) {
@@ -52,4 +52,3 @@ var repeat = function () {
     repeater();
 }
 repeat();
-

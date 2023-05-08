@@ -4,10 +4,8 @@ import "./home.css";
 import ramadan from "../../images/ramadan.png";
 import pearlCollection from "../../images/pearl-collection.jpg";
 import muslimWomen from "../../images/muslim-women.jpg";
-import useExternalScripts from "../../hooks/useExternalScripts";
 
 export default function Home() {
-    useExternalScripts("../../scripts/adSlider.js");
     return (
         <div className='home'>
             <Header />

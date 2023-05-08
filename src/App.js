@@ -14,6 +14,8 @@ import niqabs from "./images/niqabs.png";
 import hijabs from "./images/hijabs.png";
 import looseWear from "./images/loose-wear.png";
 import accessories from "./images/accessories.png";
+// import ScriptTag from 'react-script-tag';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const DATA = [
   { id: `collections-${nanoid()}`, name: "Abayas", image: abayas },
@@ -33,7 +35,16 @@ const NEW_ARRIVALS = [
 
 function App() {
   return (
-    <Navbar />
+    <HelmetProvider>
+      <div>
+        <Navbar />
+        <Helmet>
+          <script src="./scripts/AdSlider.js"
+            type="text/babel" />
+        </Helmet>
+        {/* <ScriptTag isHydrating={true} type="text/javascript" src="scripts/AdSlider.js"/> */}
+      </div>
+    </HelmetProvider>
   );
 }
 
